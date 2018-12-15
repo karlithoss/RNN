@@ -96,7 +96,7 @@ def affichage_apprentissage(x,x_droite,y_droite,titre):
     plt.show()
     
     plt.hold(True)
-    plt.plot(x_droite[0,:],y_droite[0,:])
+    plt.plot(x_droite[0,:],y_droite[0,:], 'r')
     plt.axis([np.amin(x[:,1])-0.5, np.amax(x[:,1])+0.5, np.amin(x[:,2])-0.5, np.amax(x[:,2])+0.5])
     plt.show()
     plt.pause(2)
@@ -114,7 +114,7 @@ def affichage_resultat(x, x_droite, y_droite, titre):
     plt.show()
     
     plt.hold(True)
-    plt.plot(x_droite[0,:],y_droite[0,:])
+    plt.plot(x_droite[0,:],y_droite[0,:], 'g')
     plt.axis([np.amin(x[:,1])-0.5, np.amax(x[:,1])+0.5, np.amin(x[:,2])-0.5, np.amax(x[:,2])+0.5])
     plt.show()
     

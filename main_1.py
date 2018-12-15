@@ -62,3 +62,4 @@ fct.affichage_resultat(x_d1p,x_ds_d1,y_ds_d1,'Résultat apprentissage simple d1'
 
 
 
+
