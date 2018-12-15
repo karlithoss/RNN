@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 def readMatFile(fileName):
     
-    file = scipy.io.loadmat(fileName)
+    file = scipy.io.loadmat(fileName) 
     data = file.get('x')
     return data
 

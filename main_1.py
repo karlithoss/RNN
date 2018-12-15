@@ -13,7 +13,7 @@ x_d1 = fct.readMatFile('td4_d1.mat')
 
 x_d1 = np.transpose(x_d1)
 
-x_d2 = fct.readMatFile('td4_d2.mat')
+x_d2 = fct.readMatFile('td4_d2.mat') 
 
 x_d2 = np.transpose(x_d2)
 
