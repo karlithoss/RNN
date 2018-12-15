@@ -19,7 +19,7 @@ def readMatFile(fileName):
 def phi(u,active):
     
      if (active == 0):
-         result = (np.sign(u))*(active == 0)
+         result = (np.sign(u))*(active == 0) 
      elif (active == 1):
          result = (np.tanh(u))*(active == 1)
      elif (active == 2):

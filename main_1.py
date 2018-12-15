@@ -17,7 +17,7 @@ x_d2 = fct.readMatFile('td4_d2.mat')
 
 x_d2 = np.transpose(x_d2)
 
-""" 1 Mise en place d'un perceptron simple """
+""" 1 Mise en place d'un perceptron simple """ 
 
 x = np.zeros((4,3))
 
