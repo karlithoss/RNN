@@ -8,7 +8,7 @@ Created on Thu Nov 29 14:19:36 2018
 import numpy as np
 import scipy.io 
 import h5py
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 
 def readMatFile(fileName):
     

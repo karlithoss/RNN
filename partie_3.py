@@ -6,7 +6,7 @@ Created on Sat Dec 29 18:23:55 2018
 """
 
 import numpy as np
-import functions as fct
+import functions as fct 
 import matplotlib.pyplot as plt
 
 

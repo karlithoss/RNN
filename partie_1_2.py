@@ -9,6 +9,7 @@ import functions as fct
 import matplotlib.pyplot as plt
 
 
+
 x_d1 = fct.readMatFile('td4_d1.mat')
 
 x_d1 = np.transpose(x_d1)
