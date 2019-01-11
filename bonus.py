@@ -15,6 +15,8 @@ donne = scipy.io.loadmat('donnee.mat')
 data = donne.get('x')
 oracle = donne.get('oracle')
 
+
+#Créer le matrice de y desirées
 y_des = np.zeros((np.shape(data)))
 
 s1 = np.array(([1.0], [1.0], [0.0], [0.0], [0.0], [0.0]))
@@ -31,7 +33,15 @@ for i in range(len(oracle[0,:])):
         y_des[:,i] = s3[:,0]
         
 """multiperceptron 2 couches à 6 entrées et à 6 sorties"""
-
+##########################
+"""Réseau de neurones"""
+""" N_HL1 -- N_OL1 """
+""" N_HL2 -- N_OL2 """
+""" N_HL3 -- N_OL3 """
+""" N_HL4 -- N_OL4 """
+""" N_HL5 -- N_OL5 """
+""" N_HL6 -- N_OL6 """
+#########################
 #Poids synaptiques couches 1
 w1 = np.matrix([[-1.0, 2.0, 1.0, 0.5, 1.0, 0.5], 
                 [0.5, -2.0, -2.0, 0.5, 2.0, 2.0],
@@ -73,7 +83,7 @@ while( ((sum(sum(Err_OL_copie))**2) >= seuil) and (a < n_iter) ):
     
         for i in range(length_data):
             
-            #Couche d'entrée Hide Layer
+            #Couche d'entrée Hiden Layer
             for hl in range(6):
                 y_HL[hl,0] = fct.perceptron_simple(data_x[:,i],wp1[:,hl],2)
             
@@ -114,7 +124,7 @@ while( ((sum(sum(Err_OL_copie))**2) >= seuil) and (a < n_iter) ):
         print('itération = ', a)
         a = a + 1
 
-
+#Affichege de l'évolution de la courbe d'erreur
 plt.xlabel('Itération')
 plt.ylabel('Error value')
 plt.title('Évolution de l erreur en fonction des itération')

@@ -10,11 +10,13 @@ import scipy.io
 import h5py
 import matplotlib.pyplot as plt 
 
+#Fonction pour les lires les fichiers matlab
 def readMatFile(fileName):
     
     file = scipy.io.loadmat(fileName) 
     data = file.get('x')
     return data
+
 
 def phi(u,active):
     
@@ -50,6 +52,7 @@ def perceptron_simple1(x,w,active):
     return y, u
 
 def apprentissage_simple(x,w,yd, name_data, n_iter):
+    
     
     alpha = 0.1
     wp = np.copy(w)
